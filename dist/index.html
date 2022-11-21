@@ -5,8 +5,59 @@
     <title>Output Management</title>
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <script defer="defer" src="main.js"></script>
+    <link rel="stylesheet" href="/src/style.css">
 </head>
-    <body>
+<body>
+    <div class="header"></div>
+    <div class="container">
+        <div class="sidebar">
+            <div class="side-all">
+                <H1>All Tasks</H1></div>
+            <div class="side-projects">
+                <h1>Projects</h1>
+                <Ul class="project-list">
+                    
+                </Ul>
+                <form action="">
+                    <input
+                     type="text"
+                     class="new-list-input"
+                     placeholder="new project name"
+                     aria-label="new project name"
+                     />
+                     <button id="add-List-Btn">Add Project</button>
+                    </form>
+                </div>
+            </div>
+            <div class="main">
+                <h1 id="project-title">All</h1>
+                <div class="card-container">
+                    <div class="card">
+                        <h1>Title</h1>
+                    <div class="task">Task</div>
+                    <div class="notes">Notes</div>
+                    <div class="due-date">Date</div>
+                </div>
+            </div>
 
-    </body>
+            <div class="modal">
+                <form action="" class="modal-form">
+                    <button type="submit" id="add-task-btn">Add Task</button>
+                    <input type="text"
+                    id="input-task"
+                    placeholder="new task name"
+                    aria-label="new task name"
+                    />
+                    <input type="text"
+                    id="input-notes"
+                    placeholder="new task notes"
+                    aria-label="new task notes"
+                    />
+                </form>
+                <div class="date"></div>
+            </div>
+        </div>
+
+    </div>
+</body>
 </html>
